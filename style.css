@@ -17,20 +17,21 @@ ul{
 .header{
     background-color: #1F2937;
 
-    padding: 8px;
+    padding: 0px 8px;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
 
     gap: 8px;
 }
 
 .header.logo{
-    font-size: 18px;
+    font-size: 24px;
     color: #f9faf8;
+    font-weight: bold;
 
-    margin-right: auto;
+    /*margin-right: auto;*/
 }
 
 .header.links{
@@ -44,8 +45,7 @@ ul{
 }
 
 .container{
-
-    padding: 16px;
+    padding: 64px 16px;
 
     display: flex;
     justify-content: center;
@@ -53,34 +53,44 @@ ul{
 }
 
 .container.first{
-    background-color: #1F2937;
+    height: auto;
 
+    background-color: #1F2937;
+    
     gap: 20px;
 }
 
-.container.first .cluster,
-.container.first img{
-    width: 350px;
-    height: 200px;
-
-    background-color: antiquewhite;
-
-}
-
 .container.first .cluster{
+    width: 400px;
+
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.container.first img{
+    width: 350px;
+    height: 350px;
 }
 
 .container.first h1{
+    margin: 0;
+
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
 }
 
 .container.first p{
+    margin: 0;
+
     font-size: 18px;
     color: #e5e7eb;
+}
+
+.container.first button{
+    
 }
 
 .container.second{
@@ -114,31 +124,60 @@ ul{
     border-style: solid; /*THIS GOES LAST OR ELSE DOESN'T WORK*/
 }
 
+.container.second .cluster p{
+    margin: 0;
+    text-align: center;
+}
+
 .container.third{
     background-color: #e5e7eb;
+}
 
+.container.third .block{
+    display: flex;
     flex-direction: column;
 }
 
 .container.third .quote{
-    width: 500px;
+    width: 750px;
+    margin: 0;
+
 
     font-size: 36px;
     color: #1F2937;
 }
 
+.container.third .author{
+    margin: 8px;
+    font-size: larger;
+
+    align-self: flex-end;
+}
+
 .container.fourth{
-    background-color: lightgray;
+    background-color: aliceblue;
 
 }
 
 .container.fourth .block{
     background-color: #3882F6;
-    width: 750px;
+    width: 850px;
+    padding: 32px;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    color: aliceblue;
+}
+
+.container.fourth button{
+
+}
+
+.container.fourth h3,
+.container.fourth p{
+    margin: 0;
 }
 
 .footer{
@@ -153,4 +192,8 @@ button{
     color: aliceblue;
     background-color: #3882F6;
     text-align: center;
+
+    padding: 4px 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
