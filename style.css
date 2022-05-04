@@ -72,6 +72,8 @@ ul{
 .container.first img{
     width: 350px;
     height: 350px;
+
+    flex: 0 0 auto;
 }
 
 .container.first h1{
@@ -89,10 +91,6 @@ ul{
     color: #e5e7eb;
 }
 
-.container.first button{
-    
-}
-
 .container.second{
     background-color: aliceblue;
 
@@ -107,6 +105,8 @@ ul{
 
 .container.second .cluster{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     gap: 20px;
 }
@@ -137,12 +137,14 @@ ul{
 }
 
 .container.third .block{
+    flex: 0 1 auto;
+
     display: flex;
     flex-direction: column;
 }
 
 .container.third .quote{
-    width: 750px;
+    max-width: 750px;
     margin: 0;
 
 
@@ -175,10 +177,6 @@ ul{
     color: aliceblue;
 }
 
-.container.fourth button{
-
-}
-
 .container.fourth h3,
 .container.fourth p{
     margin: 0;
@@ -194,6 +192,7 @@ ul{
     background-color: #1F2937;
     color: white;
     font-size: small;
+    text-align: center;
 
     padding: 24px;
 
@@ -203,6 +202,8 @@ ul{
 }
 
 button{
+    flex: 0 0 auto;
+
     color: aliceblue;
     background-color: #3882F6;
     text-align: center;
