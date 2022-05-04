@@ -113,7 +113,6 @@ ul{
 
 .container.second .cluster div{
     width: 150px;
-
 }
 .container.second .cluster img{
     width: 150px;
@@ -122,11 +121,15 @@ ul{
     border: 4px;
     border-color: blue;
     border-style: solid; /*THIS GOES LAST OR ELSE DOESN'T WORK*/
+    border-radius: 20px;
+
 }
 
 .container.second .cluster p{
     margin: 0;
     text-align: center;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .container.third{
@@ -162,7 +165,8 @@ ul{
 .container.fourth .block{
     background-color: #3882F6;
     width: 850px;
-    padding: 32px;
+    padding: 48px 32px;
+    border-radius: 20px;
 
     display: flex;
     justify-content: space-around;
@@ -178,10 +182,20 @@ ul{
 .container.fourth h3,
 .container.fourth p{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.container.fourth h3{
+    font-size: 24px;
+}
+
+
 .footer{
-    background-color: darkgray;
+    background-color: #1F2937;
+    color: white;
+    font-size: small;
+
+    padding: 24px;
 
     display: flex;
     justify-content: center;
@@ -192,8 +206,9 @@ button{
     color: aliceblue;
     background-color: #3882F6;
     text-align: center;
+    border-radius: 15px;
 
-    padding: 4px 16px;
+    padding: 4px 28px;
     font-size: 18px;
     font-weight: bold;
 }
